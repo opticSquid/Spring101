@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.autum_project.EmployeeTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.369 s <<< FAILURE! - in com.autum_project.EmployeeTest
+Instantiate(com.autum_project.EmployeeTest)  Time elapsed: 0.258 s  <<< ERROR!
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [config.xml]; nested exception is java.io.FileNotFoundException: class path resource [config.xml] cannot be opened because it does not exist
+	at com.autum_project.EmployeeTest.Instantiate(EmployeeTest.java:12)
+Caused by: java.io.FileNotFoundException: class path resource [config.xml] cannot be opened because it does not exist
+	at com.autum_project.EmployeeTest.Instantiate(EmployeeTest.java:12)
+
