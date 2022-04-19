@@ -8,7 +8,6 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     <bean name="scores" class="com.autum_project.refTypes.Scores" p:maths="80" p:physics="90" p:chemistry="90" />
-    <bean name="student" class="com.autum_project.refTypes.Student">
-    <property name="scores" ref="scores"/>
-    </bean>
+    <!-- the p:schema is structured as p:<variable_name>-ref=<value> -->
+    <bean name="student" class="com.autum_project.refTypes.Student" p:scores-ref="scores"/>
 </beans>
