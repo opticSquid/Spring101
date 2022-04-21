@@ -9,4 +9,9 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 	<bean class="com.autum_project.lc.annotations.Patient"
 		name="patient" p:id="123" init-method="hi" destroy-method="bye" />
+	<!-- this is a process to enable support for annotations in spring -->
+	<!-- In this modern versions support for annotations is enabled by default 
+		so no need to do this or this is optional fail safe kind of thing -->
+	<bean
+		class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
 </beans>
