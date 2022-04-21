@@ -2,6 +2,8 @@ package com.autum_project.dependencyCheck;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Required;
+
 public class Prescription {
 	private int id;
 	private String patientName;
@@ -9,6 +11,7 @@ public class Prescription {
 	public int getId() {
 		return id;
 	}
+	@Required
 	public void setId(int id) {
 		this.id = id;
 	}
