@@ -9,6 +9,8 @@ public class InnerbeanConfigTest {
 	public static void main(String[] args) {
 		ctx = new ClassPathXmlApplicationContext("com/autum_project/innerbean/InnerbeanConfig.xml");
 		Employee emploe = (Employee) ctx.getBean("employee");
-		System.out.println("Employee:" + emploe);
+		System.out.println("Employee:" + emploe.hashCode());
+		Employee emploe2 = (Employee) ctx.getBean("employee");
+		System.out.println("Employee2:" + emploe2.hashCode());
 	}
 }

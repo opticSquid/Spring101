@@ -7,8 +7,9 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- scopes of beans -->
 	<bean class="com.autum_project.innerbean.Employee" name="employee"
-		p:id="123">
+		p:id="123" scope="prototype">
 		<property name="adrs">
 			<bean class="com.autum_project.innerbean.Address" name="address"
 				p:hNo="23" p:street="Freedom Square" p:city="lelingrad" />
