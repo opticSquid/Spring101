@@ -7,6 +7,6 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-	<bean name="emp" class="com.autum_project.Employee" p:id="1"
-		p:name="Soumalya" />
+	<bean class="com.autum_project.lc.xmlconfig.Patient"
+		name="patient" p:id="123" init-method="hi" destroy-method="bye" />
 </beans>
